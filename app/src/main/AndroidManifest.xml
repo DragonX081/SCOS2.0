@@ -3,7 +3,7 @@
     package="es.source.code.activity2">
 
     <permission
-        android:name="scos.permission.ACCESSSCOS"
+        android:name="scos.permission.ACCESSSCOS2"
         android:protectionLevel="dangerous" />
 
     <application
@@ -24,7 +24,7 @@
         <activity
             android:name=".MainScreen"
             android:exported="true"
-            android:permission="scos.permission.ACCESSSCOS">
+            android:permission="scos.permission.ACCESSSCOS2">
             <intent-filter>
                 <action android:name="scos.intent.action.SCOSMAIN" />
 

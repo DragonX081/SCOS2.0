@@ -1,14 +1,6 @@
 apply plugin: 'com.android.application'
 
 android {
-    signingConfigs {
-        SCOS_Sign {
-            keyAlias 'android.keystore'
-            keyPassword 'sr19940801'
-            storeFile file('C:/Users/27379/android.keystore')
-            storePassword 'sr19940801'
-        }
-    }
     compileSdkVersion 28
     defaultConfig {
         applicationId "es.source.code.activity2"
@@ -17,13 +9,11 @@ android {
         versionCode 2
         versionName "2.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        signingConfig signingConfigs.SCOS_Sign
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.SCOS_Sign
         }
 
     }

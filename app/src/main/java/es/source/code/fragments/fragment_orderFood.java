@@ -126,6 +126,7 @@ public class fragment_orderFood extends android.support.v4.app.Fragment {
         }
     }
     private class typeCheckChangeListener implements RadioGroup.OnCheckedChangeListener {
+        //todo improve to be enclosed
         public boolean toScroll= true;
         @Override
         public void onCheckedChanged(RadioGroup group, final int checkedId) {
@@ -137,11 +138,7 @@ public class fragment_orderFood extends android.support.v4.app.Fragment {
             }
         }
     }
-    private class typeCheckChangeListenerDoNothing implements RadioGroup.OnCheckedChangeListener {
-        @Override
-        public void onCheckedChanged(RadioGroup group, final int checkedId) {
-        }
-    }
+
     private class foodListScrollListener implements AbsListView.OnScrollListener{
 
         @Override
